@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  background-color: #f0f0f0;
 }
 
-.App-link {
-  color: #61dafb;
+.label {
+  font-size: 16px;
+  margin-bottom: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
 }
+
+.button, .back-button {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover, .back-button:hover {
+  background-color: #d0d0d0;
+}
+
+.arrow {
+  font-weight: bold;
+}
+
+.uebungsfahrt-container, .sonderfahrt-container, .vorpruefung-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+.uebungsfahrt-container {
+  background-color: #dcdcdc;
+}
+
+.sonderfahrt-container {
+  background-color: #dcdcdc;
+}
+
+.vorpruefung-container {
+  background-color: #dcdcdc;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #dcdcdc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.header h2 {
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 16px;
+}
+
+.back-arrow {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  margin-right: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"], select {
+  margin-right: 10px;
+}.dropdown-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.dropdown-item label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.dropdown-item select {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.info-icon {
+  font-style: normal;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  padding: 4px 8px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.info-text {
+  display: none;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  width: max-content;
+  margin-left: 10px;
+}
+
+.info-icon:hover + .info-text {
+  display: block;
+}
+
