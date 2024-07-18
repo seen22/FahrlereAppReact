@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fahrlehreapp-react/static/css/main.2febfdad.css",
+    "main.js": "/fahrlehreapp-react/static/js/main.a1ab4085.js",
+    "static/js/453.5c464b4e.chunk.js": "/fahrlehreapp-react/static/js/453.5c464b4e.chunk.js",
+    "index.html": "/fahrlehreapp-react/index.html",
+    "main.2febfdad.css.map": "/fahrlehreapp-react/static/css/main.2febfdad.css.map",
+    "main.a1ab4085.js.map": "/fahrlehreapp-react/static/js/main.a1ab4085.js.map",
+    "453.5c464b4e.chunk.js.map": "/fahrlehreapp-react/static/js/453.5c464b4e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2febfdad.css",
+    "static/js/main.a1ab4085.js"
+  ]
+}
