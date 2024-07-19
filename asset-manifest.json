@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/fahrlehreAppReact/static/css/main.2febfdad.css",
-    "main.js": "/fahrlehreAppReact/static/js/main.52d529f6.js",
-    "static/js/453.5c464b4e.chunk.js": "/fahrlehreAppReact/static/js/453.5c464b4e.chunk.js",
-    "index.html": "/fahrlehreAppReact/index.html",
-    "main.2febfdad.css.map": "/fahrlehreAppReact/static/css/main.2febfdad.css.map",
-    "main.52d529f6.js.map": "/fahrlehreAppReact/static/js/main.52d529f6.js.map",
-    "453.5c464b4e.chunk.js.map": "/fahrlehreAppReact/static/js/453.5c464b4e.chunk.js.map"
+    "main.css": "/FahrlehreAppReact/static/css/main.2febfdad.css",
+    "main.js": "/FahrlehreAppReact/static/js/main.6fd7a151.js",
+    "static/js/453.5c464b4e.chunk.js": "/FahrlehreAppReact/static/js/453.5c464b4e.chunk.js",
+    "index.html": "/FahrlehreAppReact/index.html",
+    "main.2febfdad.css.map": "/FahrlehreAppReact/static/css/main.2febfdad.css.map",
+    "main.6fd7a151.js.map": "/FahrlehreAppReact/static/js/main.6fd7a151.js.map",
+    "453.5c464b4e.chunk.js.map": "/FahrlehreAppReact/static/js/453.5c464b4e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2febfdad.css",
-    "static/js/main.52d529f6.js"
+    "static/js/main.6fd7a151.js"
   ]
 }
