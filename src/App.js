@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 const coordinates = {
@@ -17,6 +17,20 @@ const coordinates = {
 const App = () => {
   const [currentView, setCurrentView] = useState('');
   const [selectedCoordinates, setSelectedCoordinates] = useState({});
+
+  useEffect(() => {
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/FahrlereAppReact/service-worker.js')
+          .then(registration => {
+            console.log('SW registered: ', registration);
+          })
+          .catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+      });
+    }
+  }, []);
 
   const handleViewChange = (view) => {
     setCurrentView(view);
