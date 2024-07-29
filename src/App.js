@@ -52,9 +52,10 @@ const App = () => {
     <div className="container">
       {currentView === '' && (
         <>
-          <div className="label">Name der Schüler</div>
-          <input className="input" type="text" placeholder="Name der Schüler" />
-
+          <button className="button" onClick={() => handleViewChange('Schüler Daten')}>
+            Schüler Daten <span className="arrow"></span>
+          </button>
+          
           <button className="button" onClick={() => handleViewChange('uebungsfahrt')}>
             Übungsfahrt <span className="arrow"></span>
           </button>
@@ -65,6 +66,38 @@ const App = () => {
             Vorprüfung <span className="arrow"></span>
           </button>
         </>
+      )}
+
+      {currentView === 'Schüler Daten' && (
+        <div className="Schüler Daten-container">
+          <div className="header">
+          <button className="back-button" onClick={handleBack}>
+  <svg className="back-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M15 6l-6 6 6 6" />
+  </svg>
+  Schüler Daten
+</button>
+            
+          </div>
+          <div className="label">Anschrift</div>
+          <input className="input" type="text" placeholder="Anschrift" />
+          
+          <div className="label">Telefonnummer</div>
+          <input className="input" type="text" placeholder="Telefonnummer" />
+
+          <div className="label">Geburtsdatum</div>
+          <input className="input" type="text" placeholder="Geburtsdatum" />
+
+          <div className="label">Anlage/n</div>
+          <input className="input" type="text" placeholder="Anlage/n" />
+
+          <label><input type= "checkbox"/> Sehhilfe: </label>
+
+          <div className='label'>Antrag gestellt am:</div>
+          <input className="input" type= "text"placeholder='Antrag gestellt am:'/>
+          <div className='label'>Theorieprüfung bestanden am:</div>
+          <input className="input" type= "text"placeholder='Theorieprüfung bestanden am:'/>
+        </div>
       )}
 
       {currentView === 'uebungsfahrt' && (
